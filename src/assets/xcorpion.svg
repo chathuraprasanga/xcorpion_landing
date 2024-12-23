@@ -1,0 +1,18 @@
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 200 200"
+        width="200"
+        height="200"
+        fill="none"
+        aria-labelledby="xcorpionLogoTitle"
+>
+    <title id="xcorpionLogoTitle">Xcorpion Logo</title>
+    <!-- Background Circle -->
+    <circle cx="100" cy="100" r="65" fill="#2563eb" />
+
+    <!-- Letter "X" -->
+    <path
+            d="M75 75 L100 100 L75 125 L85 135 L110 110 L135 135 L145 125 L120 100 L145 75 L135 65 L110 90 L85 65 Z"
+            fill="white"
+    />
+</svg>
