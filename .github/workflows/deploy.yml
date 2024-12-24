@@ -26,6 +26,17 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.DROPLET_USER }}@${{ secrets.DROPLET_HOST }} "echo 'SSH connection successful!'"
 
+      # Debug PATH and npm availability
+      - name: Test PATH and npm availability
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.DROPLET_USER }}@${{ secrets.DROPLET_HOST }} << 'EOF'
+            set -e
+            echo "PATH is: $PATH"
+            which npm || echo "npm not found"
+            node -v || echo "node not found"
+            npm -v || echo "npm not found"
+          EOF
+
       # Deploy Xcorpion Landing to Droplet
       - name: Deploy Xcorpion Landing to Droplet
         run: |
