@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6faf05a8-2f06-45ed-b16c-2ae030ac4559" name="Changes" comment="changing">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/404.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/404/NotFoundImage.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/404/NotFoundImage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/colorSchemaToggle/ActionToggle.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/colorSchemaToggle/ActionToggle.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/footer/FooterCentered.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/footer/FooterCentered.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header/HeaderSearch.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header/HeaderSearch.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/heroBanner/HeroImageBackground.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/heroBanner/HeroImageBackground.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layouts/WebLayout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/HomePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="6faf05a8-2f06-45ed-b16c-2ae030ac4559" name="Changes" comment="changing" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +95,7 @@
       <updated>1734944621995</updated>
       <workItem from="1734944625192" duration="9360000" />
       <workItem from="1734960562448" duration="11000" />
-      <workItem from="1734979765080" duration="17338000" />
+      <workItem from="1734979765080" duration="17648000" />
     </task>
     <task id="LOCAL-00001" summary="changing">
       <option name="closed" value="true" />
