@@ -5,12 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6faf05a8-2f06-45ed-b16c-2ae030ac4559" name="Changes" comment="changing">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/xcorpion.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/404/NotFoundImage.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/404/NotFoundImage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/colorSchemaToggle/ActionToggle.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/colorSchemaToggle/ActionToggle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/footer/FooterCentered.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/footer/FooterCentered.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/HeaderSearch.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/HeaderSearch.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/heroBanner/HeroImageBackground.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/heroBanner/HeroImageBackground.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layouts/WebLayout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/HomePage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,22 +35,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "chathuraprasanga"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;chathuraprasanga&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/chathuraprasanga/xcorpion_landing.git",
-    "accountId": "013ea9bf-ee92-4d27-871c-2f1762213dd1"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/chathuraprasanga/xcorpion_landing.git&quot;,
+    &quot;accountId&quot;: &quot;013ea9bf-ee92-4d27-871c-2f1762213dd1&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2qbwX9tBg3II5yqXBKmZsitJi1t" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -49,6 +64,7 @@
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Xcorpion/xcorpion_landing/src/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -63,6 +79,14 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Xcorpion\xcorpion_landing\src\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Xcorpion\xcorpion_landing\src\assets" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -91,7 +115,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1734944621995</updated>
-      <workItem from="1734944625192" duration="7304000" />
+      <workItem from="1734944625192" duration="9360000" />
+      <workItem from="1734960562448" duration="11000" />
+      <workItem from="1734979765080" duration="17338000" />
     </task>
     <task id="LOCAL-00001" summary="changing">
       <option name="closed" value="true" />
@@ -101,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734944682910</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="changing">
+      <option name="closed" value="true" />
+      <created>1734956019779</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734956019779</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

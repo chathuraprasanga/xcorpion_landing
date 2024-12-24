@@ -1,0 +1,41 @@
+name: Deploy Xcorpion Landing to Droplet
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy Xcorpion Landing
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up SSH agent
+      - name: Set up SSH agent
+        uses: webfactory/ssh-agent@v0.8.1
+        with:
+          ssh-private-key: ${{ secrets.PRIVATE_KEY }}
+
+      # Test SSH connection
+      - name: Test SSH Connection
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.DROPLET_USER }}@${{ secrets.DROPLET_HOST }} "echo 'SSH connection successful!'"
+
+      # Deploy Xcorpion Landing to Droplet
+      - name: Deploy Xcorpion Landing to Droplet
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.DROPLET_USER }}@${{ secrets.DROPLET_HOST }} << 'EOF'
+            set -e
+            cd /var/www/xcorpion-landing
+            rm -rf dist
+            git pull
+            npm install --force
+            npm run lint
+            npm run build
+            sudo systemctl restart nginx.service
+          EOF
