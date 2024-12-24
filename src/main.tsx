@@ -22,12 +22,12 @@ const router = createBrowserRouter([
             {
                 path: "*",
                 element: <NotFoundImage/>
+            },
+            {
+                path: "",
+                element: <Navigate to="/home" replace />
             }
         ],
-    },
-    {
-      path: "/",
-      element: <Navigate to="/home" replace/>
     },
     {
         path: "*",
