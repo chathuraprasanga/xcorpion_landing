@@ -31,10 +31,12 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.DROPLET_USER }}@${{ secrets.DROPLET_HOST }} << 'EOF'
             set -e
-            echo "PATH is: $PATH"
-            which npm || echo "npm not found"
-            node -v || echo "node not found"
-            npm -v || echo "npm not found"
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+            nvm use node
+            echo "Node version: $(node -v)"
+            echo "npm version: $(npm -v)"
           EOF
 
       # Deploy Xcorpion Landing to Droplet
@@ -42,8 +44,10 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.DROPLET_USER }}@${{ secrets.DROPLET_HOST }} << 'EOF'
             set -e
-            source ~/.nvm/nvm.sh
-            nvm use node
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # Load nvm
+            [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # Load nvm bash_completion (optional)
+            nvm use node # Ensure the correct Node.js version is active
             cd /var/www/xcorpion-landing
             rm -rf dist
             git pull
