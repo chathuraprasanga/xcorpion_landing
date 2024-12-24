@@ -4,7 +4,7 @@ import "@mantine/core/styles.css";
 
 import { MantineProvider } from "@mantine/core";
 import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
 import WebLayout from "./layouts/WebLayout.tsx";
 import HomePage from "./pages/HomePage.tsx";
 import { NotFoundImage } from "./components/404/NotFoundImage.tsx";
@@ -24,6 +24,10 @@ const router = createBrowserRouter([
                 element: <NotFoundImage/>
             }
         ],
+    },
+    {
+      path: "/",
+      element: <Navigate to="/home" replace/>
     },
     {
         path: "*",
