@@ -42,6 +42,8 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.DROPLET_USER }}@${{ secrets.DROPLET_HOST }} << 'EOF'
             set -e
+            source ~/.nvm/nvm.sh
+            nvm use node
             cd /var/www/xcorpion-landing
             rm -rf dist
             git pull
