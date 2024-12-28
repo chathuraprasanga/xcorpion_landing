@@ -1,7 +1,6 @@
 import { Badge, Button, Card, Group, Image, Text } from '@mantine/core';
 import classes from './BadgeCard.module.css';
 import image from '../../../public/wd-app.jpg';
-import { useNavigate } from "react-router"; // Adjust the path to match the actual location of the image
 
 const mockdata = {
     image: image,
