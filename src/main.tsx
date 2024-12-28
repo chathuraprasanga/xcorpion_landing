@@ -8,6 +8,7 @@ import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom"
 import WebLayout from "./layouts/WebLayout.tsx";
 import HomePage from "./pages/HomePage.tsx";
 import { NotFoundImage } from "./components/404/NotFoundImage.tsx";
+import ContactUsPage from "./pages/ContactUsPage.tsx";
 
 // Define the router
 const router = createBrowserRouter([
@@ -18,6 +19,9 @@ const router = createBrowserRouter([
             {
                 path: "home",
                 element: <HomePage/>
+            },{
+                path: "contact-us",
+                element: <ContactUsPage/>
             },
             {
                 path: "*",
@@ -39,7 +43,7 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")!).render(
     <MantineProvider>
         <StrictMode>
-            <RouterProvider router={router} />
+            <RouterProvider router={router}/>
         </StrictMode>
     </MantineProvider>
 );

@@ -1,8 +1,10 @@
-import cx from 'clsx';
 import { Button, Container, Overlay, Text, Title } from '@mantine/core';
 import classes from './HeroImageBackground.module.css';
+import { useNavigate } from "react-router";
 
 export function HeroImageBackground() {
+    const navigate = useNavigate();
+
     return (
         <div className={classes.wrapper}>
             <Overlay color="#000" opacity={0.65} zIndex={1} />
@@ -23,11 +25,8 @@ export function HeroImageBackground() {
                 </Container>
 
                 <div className={classes.controls}>
-                    <Button className={classes.control} variant="white" size="lg">
-                        Get started
-                    </Button>
-                    <Button className={cx(classes.control, classes.secondaryControl)} size="lg">
-                        Live demo
+                    <Button className={classes.control} variant="white" size="lg" onClick={() => navigate("/contact-us")}>
+                        Conatct Us
                     </Button>
                 </div>
             </div>

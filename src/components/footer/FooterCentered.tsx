@@ -5,6 +5,7 @@ import {
 } from "@tabler/icons-react";
 import { ActionIcon, Anchor, Box, Group, Text } from "@mantine/core";
 import classes from "./FooterCentered.module.css";
+import { useNavigate } from "react-router";
 
 const links = [
     { link: "/contact-us", label: "Contact Us" },
@@ -15,14 +16,15 @@ const links = [
 ];
 
 export function FooterCentered() {
+    const navigate = useNavigate();
+
     const items = links.map((link) => (
         <Anchor
             c="dimmed"
-            key={link.label}
-            href={link.link}
             lh={1}
-            onClick={(event) => event.preventDefault()}
+            onClick={() => navigate(link.link)}
             size="sm"
+            key={link.link}
         >
             {link.label}
         </Anchor>
