@@ -1,13 +1,17 @@
-import { IconBrandInstagram, IconBrandTwitter, IconBrandYoutube } from '@tabler/icons-react';
+import {
+    IconBrandInstagram,
+    IconBrandTwitter,
+    IconBrandYoutube,
+} from "@tabler/icons-react";
 import { ActionIcon, Anchor, Box, Group, Text } from "@mantine/core";
-import classes from './FooterCentered.module.css';
+import classes from "./FooterCentered.module.css";
 
 const links = [
-    { link: '/contact-us', label: 'Contact Us' },
-    { link: '/privacy-policy', label: 'Privacy Policy' },
-    { link: '/terms-and-condition', label: 'Terms and Condition' },
-    { link: '/blogs', label: 'Blog' },
-    { link: '/careers', label: 'Careers' },
+    { link: "/contact-us", label: "Contact Us" },
+    { link: "/privacy-policy", label: "Privacy Policy" },
+    { link: "/terms-and-condition", label: "Terms and Condition" },
+    { link: "/blogs", label: "Blog" },
+    { link: "/careers", label: "Careers" },
 ];
 
 export function FooterCentered() {
@@ -28,8 +32,12 @@ export function FooterCentered() {
         <div className={classes.footer}>
             <div className={classes.inner}>
                 <div className="flex flex-row items-center">
-                <Box><img src="/src/assets/logo.png" className="max-w-10"/></Box>
-                <Text size="xl" mx="md" className="font-semibold">XCORPION</Text>
+                    <Box>
+                        <img src="/logo.png" className="max-w-10" />
+                    </Box>
+                    <Text size="xl" mx="md" className="font-semibold">
+                        XCORPION
+                    </Text>
                 </div>
                 <Group className={classes.links}>{items}</Group>
 

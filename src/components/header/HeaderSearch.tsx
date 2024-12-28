@@ -37,7 +37,7 @@ export function HeaderSearch() {
             <div className={classes.inner}>
                 <Group>
                     <Burger opened={opened} onClick={toggle} size="sm" hiddenFrom="sm" />
-                    <Box><img src="/src/assets/logo.png" className="max-w-10"/></Box>
+                    <Box><img src="/logo.png" className="max-w-10" /></Box>
                     <Text size="xl" className="font-semibold">XCORPION</Text>
                 </Group>
 
