@@ -1,5 +1,5 @@
 import { Badge, Button, Card, Group, Image, Text } from '@mantine/core';
-import classes from './BadgeCard.module.css';
+import classes from './Badgecard.module.css';
 import image from '../../../public/wd-app.jpg';
 
 const mockdata = {
