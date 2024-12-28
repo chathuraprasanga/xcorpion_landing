@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6faf05a8-2f06-45ed-b16c-2ae030ac4559" name="Changes" comment="changing">
-      <change afterPath="$PROJECT_DIR$/public/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/email.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FeaturesGrid/FeaturesCard.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FeaturesGrid/FeaturesCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/emailBanner/EmailBanner.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/getInTouch/ContactIcons.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/getInTouch/ContactIcons.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/getInTouch/GetInTouch.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/getInTouch/GetInTouch.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/ContactUsPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/FooterCentered.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/FooterCentered.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/heroBanner/HeroImageBackground.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/heroBanner/HeroImageBackground.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/WebLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/WebLayout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HomePage.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="6faf05a8-2f06-45ed-b16c-2ae030ac4559" name="Changes" comment="changing" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +98,7 @@
       <workItem from="1734944625192" duration="9360000" />
       <workItem from="1734960562448" duration="11000" />
       <workItem from="1734979765080" duration="21267000" />
-      <workItem from="1735358853739" duration="16420000" />
+      <workItem from="1735358853739" duration="16719000" />
     </task>
     <task id="LOCAL-00001" summary="changing">
       <option name="closed" value="true" />

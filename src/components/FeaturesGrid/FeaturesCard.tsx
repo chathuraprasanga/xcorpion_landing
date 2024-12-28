@@ -1,6 +1,6 @@
 import { IconCookie, IconGauge, IconUser } from '@tabler/icons-react';
 import {
-    Badge, Box,
+    Badge,
     Card,
     Container,
     Group,
