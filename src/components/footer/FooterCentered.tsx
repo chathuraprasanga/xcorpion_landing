@@ -1,5 +1,5 @@
 import { IconBrandInstagram, IconBrandTwitter, IconBrandYoutube } from '@tabler/icons-react';
-import { ActionIcon, Anchor, Group, Text } from '@mantine/core';
+import { ActionIcon, Anchor, Box, Group, Text } from "@mantine/core";
 import classes from './FooterCentered.module.css';
 
 const links = [
@@ -27,8 +27,10 @@ export function FooterCentered() {
     return (
         <div className={classes.footer}>
             <div className={classes.inner}>
-                <Text size="xl" className="font-semibold">XCORPION</Text>
-
+                <div className="flex flex-row items-center">
+                <Box><img src="/src/assets/logo.png" className="max-w-10"/></Box>
+                <Text size="xl" mx="md" className="font-semibold">XCORPION</Text>
+                </div>
                 <Group className={classes.links}>{items}</Group>
 
                 <Group gap="xs" justify="flex-end" wrap="nowrap">

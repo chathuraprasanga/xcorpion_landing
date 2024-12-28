@@ -1,4 +1,4 @@
-import { Burger, Drawer, Group, Text } from "@mantine/core";
+import { Box, Burger, Drawer, Group, Text } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "./HeaderSearch.module.css";
 import { ActionToggle } from "../colorSchemaToggle/ActionToggle.tsx";
@@ -37,6 +37,7 @@ export function HeaderSearch() {
             <div className={classes.inner}>
                 <Group>
                     <Burger opened={opened} onClick={toggle} size="sm" hiddenFrom="sm" />
+                    <Box><img src="/src/assets/logo.png" className="max-w-10"/></Box>
                     <Text size="xl" className="font-semibold">XCORPION</Text>
                 </Group>
 
