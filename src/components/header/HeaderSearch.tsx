@@ -52,7 +52,13 @@ export function HeaderSearch() {
                         padding="md"
                         size="md"
                     >
-                        <div>{items}</div>
+                        <div>
+                            {items.map((item, index) => (
+                                <div key={index} onClick={toggle} style={{ cursor: 'pointer' }}>
+                                    {item}
+                                </div>
+                            ))}
+                        </div>
                     </Drawer>
                     <Group>
                         <ActionToggle />
