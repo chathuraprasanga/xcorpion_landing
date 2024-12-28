@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6faf05a8-2f06-45ed-b16c-2ae030ac4559" name="Changes" comment="changing" />
+    <list default="true" id="6faf05a8-2f06-45ed-b16c-2ae030ac4559" name="Changes" comment="changing">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/getInTouch/GetInTouch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/getInTouch/GetInTouch.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,7 +102,7 @@
       <workItem from="1734944625192" duration="9360000" />
       <workItem from="1734960562448" duration="11000" />
       <workItem from="1734979765080" duration="21267000" />
-      <workItem from="1735358853739" duration="16719000" />
+      <workItem from="1735358853739" duration="17928000" />
     </task>
     <task id="LOCAL-00001" summary="changing">
       <option name="closed" value="true" />
