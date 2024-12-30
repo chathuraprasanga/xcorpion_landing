@@ -1,23 +1,22 @@
-import { Badge, Button, Card, Group, Image, Text } from '@mantine/core';
-import classes from './Badgecard.module.css';
-import image from '../../../public/wd-app.jpg';
+import { Badge, Button, Card, Group, Image, Text } from "@mantine/core";
+import classes from "./Badgecard.module.css";
+import image from "../../../public/wd-app.jpg";
 
 const mockdata = {
     image: image,
-    title: 'Wijekoon Enterprises',
-    country: 'Sri Lanka',
+    title: "Wijekoon Enterprises",
+    country: "Sri Lanka",
     description:
-        'Web Application to do day to day business operations of the distribution company in the northwest province of Sri Lanka',
+        "Web Application to do day to day business operations of the distribution company in the northwest province of Sri Lanka",
     badges: [
-        { emoji: '☀️', label: 'Customers' },
-        { emoji: '🦓', label: 'Products' },
-        { emoji: '🌊', label: 'Suppliers' },
-        { emoji: '🌲', label: 'Cheques' },
-        { emoji: '🤽', label: 'Invoices' },
+        { emoji: "👥", label: "Customers" },
+        { emoji: "📦", label: "Products" },
+        { emoji: "🚚", label: "Suppliers" },
+        { emoji: "💰", label: "Cheques" },
+        { emoji: "🧾", label: "Invoices" },
     ],
-    link: "https://wd-app.xcorpion.xyz"
+    link: "https://wd-app.xcorpion.xyz",
 };
-
 
 export function BadgeCard() {
     const { image, title, description, country, badges, link } = mockdata;
@@ -30,7 +29,7 @@ export function BadgeCard() {
     return (
         <Card withBorder radius="md" p="md" className={classes.card}>
             <Card.Section>
-                <Image src={image} alt={title}/>
+                <Image src={image} alt={title} />
             </Card.Section>
 
             <Card.Section className={classes.section} mt="md">
@@ -60,11 +59,10 @@ export function BadgeCard() {
                 <Button
                     radius="md"
                     style={{ flex: 1 }}
-                    onClick={() => window.open(link, '_blank')}
+                    onClick={() => window.open(link, "_blank")}
                 >
                     Open Link
                 </Button>
-
             </Group>
         </Card>
     );
