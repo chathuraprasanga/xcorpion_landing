@@ -26,7 +26,7 @@ function ContactIcon({ icon: Icon, title, description, ...others }: ContactIconP
 }
 
 const MOCKDATA = [
-    { title: 'Email', description: 'chathuraprasanga98@gmail.com', icon: IconAt },
+    { title: 'Email', description: 'info@xcorpion.com', icon: IconAt },
     { title: 'Phone', description: '+94 (77) 92 50 108', icon: IconPhone },
     { title: 'Address', description: 'Godawele Watta, Kotikapola, Mawathagama', icon: IconMapPin },
     { title: 'Working hours', description: '24 X 7', icon: IconSun },
