@@ -10,7 +10,7 @@ import image03 from '../assets/03.jpg';
 
 const SampleCarousel = () => {
     const isMobile = useMediaQuery('(max-width: 768px)');
-    const carouselHeight = isMobile ? 300 : 450;
+    const carouselHeight = isMobile ? 200 : 400;
 
     return (
         <Carousel withIndicators height={carouselHeight} loop>
