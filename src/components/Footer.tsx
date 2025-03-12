@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <>
             <Group
-                className="w-full px-2 py-3 flex flex-col md:flex-row items-center text-white justify-center md:justify-between gap-4"
+                className="w-full px-2 py-3 flex flex-col md:flex-row items-center text-white justify-center md:justify-between gap-4 lg:justify-between"
                 bg="teal"
             >
                 {/* Left: Logo, Brand, and Links */}
