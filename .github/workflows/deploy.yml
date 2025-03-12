@@ -22,7 +22,7 @@ jobs:
 
       - name: Install dependencies and build frontend
         run: |
-          npm install
+          npm install --force
           npm run build
           tar -czf frontend-dist.tar.gz dist
 
