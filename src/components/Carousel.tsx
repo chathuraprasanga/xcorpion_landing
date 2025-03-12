@@ -1,34 +1,41 @@
 import { Carousel } from '@mantine/carousel';
 import { Image } from '@mantine/core';
+import { useMediaQuery } from '@mantine/hooks';
 // @ts-ignore
-import image01 from '../assets/01.jpg'
+import image01 from '../assets/01.jpg';
 // @ts-ignore
-import image02 from '../assets/02.jpg'
+import image02 from '../assets/02.jpg';
 // @ts-ignore
-import image03 from '../assets/03.jpg'
+import image03 from '../assets/03.jpg';
 
 const SampleCarousel = () => {
+    const isMobile = useMediaQuery('(max-width: 768px)');
+    const carouselHeight = isMobile ? 300 : 450;
+
     return (
-        <Carousel withIndicators height={450} loop>
+        <Carousel withIndicators height={carouselHeight} loop>
             <Carousel.Slide>
                 <Image
                     src={image01}
                     alt="Nature"
-                    height={450}
+                    height={carouselHeight}
+                    fit="cover"
                 />
             </Carousel.Slide>
             <Carousel.Slide>
                 <Image
                     src={image02}
                     alt="Water"
-                    height={450}
+                    height={carouselHeight}
+                    fit="cover"
                 />
             </Carousel.Slide>
             <Carousel.Slide>
                 <Image
                     src={image03}
                     alt="City"
-                    height={450}
+                    height={carouselHeight}
+                    fit="cover"
                 />
             </Carousel.Slide>
         </Carousel>
