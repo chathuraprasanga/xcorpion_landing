@@ -2,7 +2,7 @@ import { Text } from "@mantine/core";
 
 const Technologies = () => {
     return (
-        <div className="px-8 py-4 flex flex-col md:flex-row items-center gap-8">
+        <div className="px-8 py-16 bg-gray-50 flex flex-col md:flex-row items-center gap-8">
             {/* Left side: Title and expanded description */}
             <div className="md:w-1/2 mb-6 md:mb-0 pr-4">
                 <span
@@ -11,8 +11,7 @@ const Technologies = () => {
                     Our Technologies
                 </span>
                 <span
-                    className="text-gray-700 text-base leading-loose"
-                    style={{ textAlign: "justify" }}
+                    className="text-gray-700 text-base leading-loose text-justify"
                 >
                      At <strong>XCORPION</strong>, we harness the power of cutting-edge technologies to build robust,
                     scalable, and innovative software solutions. Our team leverages a wide spectrum of modern

@@ -1,11 +1,13 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import {Button, Group, Text, Burger, Menu} from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
+import {useMediaQuery} from '@mantine/hooks';
 // @ts-ignore
 import logo from "../assets/logo.png";
 import Divider = Menu.Divider;
+import {useNavigate} from "react-router-dom";
 
 const Header = () => {
+    const navigate = useNavigate();
     const [opened, setOpened] = useState(false);
     const isMobile = useMediaQuery('(max-width: 768px)');
 
@@ -19,7 +21,7 @@ const Header = () => {
                 {/* Left: Logo and brand name */}
                 <div className="flex flex-row items-center gap-2">
                     <div className="bg-white p-1 rounded-2xl">
-                        <img src={logo} alt="logo" className="h-[32px]" />
+                        <img src={logo} alt="logo" className="h-[32px]"/>
                     </div>
                     <div>
                         <Text size="xl" fw="bold" c="white">
@@ -60,7 +62,7 @@ const Header = () => {
                         </ul>
                     </div>
                 ) : (
-                    <Burger opened={opened} onClick={() => setOpened(o => !o)} color="white" />
+                    <Burger opened={opened} onClick={() => setOpened(o => !o)} color="white"/>
                 )}
 
                 {/* Right: Login button (desktop only) */}
@@ -78,38 +80,47 @@ const Header = () => {
                 <div className="fixed inset-0 z-50 bg-white h-fit">
                     {/* Overlay header with close burger */}
                     <div className="flex justify-end p-4">
-                        <Burger opened={opened} onClick={() => setOpened(false)} color="black" />
+                        <Burger opened={opened} onClick={() => setOpened(false)} color="black"/>
                     </div>
                     {/* Navigation and Login buttons */}
                     <ul className="flex flex-col gap-1 px-4 py-6">
                         <li>
-                            <Button fullWidth radius="xl" variant="transparent" color="teal" onClick={() => setOpened(false)}>
+                            <Button fullWidth radius="xl" variant="transparent" color="teal"
+                                    onClick={() => navigate("/")}
+                            >
                                 Home
                             </Button>
                         </li>
                         <li>
-                            <Button fullWidth radius="xl" variant="transparent" color="teal" onClick={() => setOpened(false)}>
+                            <Button fullWidth radius="xl" variant="transparent" color="teal" onClick={() => {
+                                setOpened(false);
+                                navigate("/blog");
+                            }}>
                                 Blog
                             </Button>
                         </li>
                         <li>
-                            <Button fullWidth radius="xl" variant="transparent" color="teal" onClick={() => setOpened(false)}>
+                            <Button fullWidth radius="xl" variant="transparent" color="teal"
+                                    onClick={() => setOpened(false)}>
                                 Products
                             </Button>
                         </li>
                         <li>
-                            <Button fullWidth radius="xl" variant="transparent" color="teal" onClick={() => setOpened(false)}>
+                            <Button fullWidth radius="xl" variant="transparent" color="teal"
+                                    onClick={() => setOpened(false)}>
                                 About Us
                             </Button>
                         </li>
                         <li>
-                            <Button fullWidth radius="xl" variant="transparent" color="teal" onClick={() => setOpened(false)}>
+                            <Button fullWidth radius="xl" variant="transparent" color="teal"
+                                    onClick={() => setOpened(false)}>
                                 Contact Us
                             </Button>
                         </li>
                         <hr/>
                         <li className="mx-auto mt-2">
-                            <Button radius="xl" size="sm" variant="filled" color="lime" onClick={() => setOpened(false)}>
+                            <Button radius="xl" size="sm" variant="filled" color="lime"
+                                    onClick={() => setOpened(false)}>
                                 Login
                             </Button>
                         </li>
