@@ -33,10 +33,9 @@ function FeaturesGrid() {
             <Title className="text-3xl sm:text-4xl font-bold text-center mb-6 text-gray-900">
                 Why Choose Us?
             </Title>
-            <Text className="text-center text-gray-700 text-lg sm:text-xl mb-10 max-w-3xl mx-auto leading-relaxed">
+            <Text className="lg:text-center text-gray-700 text-lg sm:text-xl mb-10 mx-auto leading-relaxed">
                 Unlock unparalleled service, cutting-edge technology, and a seamless experience tailored just for you.
             </Text>
-
 
 
             <br/>
