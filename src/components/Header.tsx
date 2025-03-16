@@ -35,12 +35,15 @@ const Header = () => {
                     <div className="items-center">
                         <ul className="flex flex-row gap-6">
                             <li>
-                                <Button radius="xl" variant="transparent" color="white">
+                                <Button radius="xl" variant="transparent" color="white" onClick={() => navigate("/")}>
                                     Home
                                 </Button>
                             </li>
                             <li>
-                                <Button radius="xl" variant="transparent" color="white">
+                                <Button radius="xl" variant="transparent" color="white" onClick={() => {
+                                    setOpened(false);
+                                    navigate("/blog");
+                                }}>
                                     Blog
                                 </Button>
                             </li>
