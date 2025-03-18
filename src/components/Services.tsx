@@ -1,6 +1,16 @@
+import {
+    codeSlashOutline,
+    browsersOutline,
+    archiveOutline,
+    phonePortraitOutline,
+    bagCheckOutline,
+    swapHorizontalOutline
+} from "ionicons/icons";
+import { IonIcon } from "@ionic/react";
+
 const Services = () => {
     return (
-        <div className="m-auto md:px-10 bg-[#111111]">
+        <div id="services" className="m-auto md:px-10 bg-[#111111]">
             <section className="w-full h-full flex flex-col justify-center md:py-20 py-10 px-4 md:px-20">
                 {/* Section Title */}
                 <div className="w-fit mx-auto text-center">
@@ -16,7 +26,7 @@ const Services = () => {
                     {servicesData.map((service, index) => (
                         <div key={index} className="flex items-start gap-4 p-4 bg-gray-900 rounded-lg shadow-lg hover:bg-gray-800 transition">
               <span>
-                <ion-icon className="text-4xl sm:text-5xl text-green-400 dark:text-green-600" name={service.icon}></ion-icon>
+                <IonIcon className="text-4xl sm:text-5xl text-green-400 dark:text-green-600" icon={service.icon} />
               </span>
                             <div className="flex flex-col gap-2">
                                 <h3 className="text-lg sm:text-xl font-semibold text-white">{service.title}</h3>
@@ -34,32 +44,32 @@ const Services = () => {
 const servicesData = [
     {
         title: "Web Development",
-        icon: "code-slash-outline",
+        icon: codeSlashOutline,
         description: "Crafting responsive and intuitive websites tailored to your unique needs using cutting-edge technologies.",
     },
     {
         title: "UI/UX Design",
-        icon: "browsers-outline",
+        icon: browsersOutline,
         description: "Creating visually appealing and user-centric designs that enhance user experiences and engagement.",
     },
     {
         title: "Custom CMS Solutions",
-        icon: "archive-outline",
+        icon: archiveOutline,
         description: "Building reusable and efficient CMS APIs to simplify website management and scalability.",
     },
     {
         title: "Mobile App Development",
-        icon: "phone-portrait-outline",
+        icon: phonePortraitOutline,
         description: "Designing and developing user-friendly mobile applications for iOS and Android, ensuring seamless performance.",
     },
     {
         title: "E-commerce Development",
-        icon: "bag-check-outline",
+        icon: bagCheckOutline,
         description: "Creating robust platforms to elevate your online business presence and drive sales effectively.",
     },
     {
         title: "API Integration",
-        icon: "swap-horizontal-outline",
+        icon: swapHorizontalOutline,
         description: "Seamlessly connecting systems to enhance functionality and performance for business automation.",
     },
 ];
