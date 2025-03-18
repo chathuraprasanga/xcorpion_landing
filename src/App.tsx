@@ -1,24 +1,34 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header.js";
-import Footer from "./components/Footer.js";
-import HomePage from "./pages/HomePage.js";
-// Import additional pages as needed
-import BlogPage from "./pages/BlogPage.js";
-import ProductsPage from "./pages/ProductsPage";
+import Footer from "./components/Footer.tsx";
+import Header from "./components/Header.tsx";
+import Hero from "./components/Hero.tsx";
+import AboutUs from "./components/AboutUs.tsx";
+import Services from "./components/Services.tsx";
+import ContactUs from "./components/ContactUs.tsx";
 
 function App() {
-    return (
-        <Router>
-            <Header />
-            <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/blog" element={<BlogPage />} />
-                <Route path="/products" element={<ProductsPage />} />
-                {/* Add more routes here */}
-            </Routes>
-            <Footer />
-        </Router>
-    );
+
+  return (
+    <>
+        <div>
+            <Header/>
+        </div>
+        <div>
+            <Hero/>
+        </div>
+        <div>
+            <AboutUs/>
+        </div>
+        <div>
+            <Services/>
+        </div>
+        <div>
+            <ContactUs/>
+        </div>
+        <div>
+            <Footer/>
+        </div>
+    </>
+  )
 }
 
-export default App;
+export default App
