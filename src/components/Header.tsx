@@ -87,45 +87,54 @@ const Header = () => {
 
             {/* Mobile Menu Content */}
             {isMenuOpen && (
-                <div className="md:hidden absolute top-20 left-0 w-full bg-black/90 z-[999]">
+                <div className="md:hidden fixed inset-0 bg-black/90 z-[999] flex flex-col items-center justify-center">
+                    {/* Close Button */}
+                    <button
+                        onClick={() => setIsMenuOpen(false)}
+                        className="absolute top-5 right-5 text-white text-3xl"
+                    >
+                        ✕
+                    </button>
+
+                    {/* Menu Items - Clicking any will close the menu */}
                     <a
                         href="/"
-                        className="block p-4 text-white hover:bg-purple-700 transition"
+                        className="block py-4 text-white text-lg hover:text-purple-400 transition"
+                        onClick={() => setIsMenuOpen(false)}
                     >
                         Home
                     </a>
                     <a
                         href="#about"
-                        className="block p-4 text-white hover:bg-purple-700 transition"
+                        className="block py-4 text-white text-lg hover:text-purple-400 transition"
+                        onClick={() => setIsMenuOpen(false)}
                     >
                         About
                     </a>
                     <a
                         href="#services"
-                        className="block p-4 text-white hover:bg-purple-700 transition"
+                        className="block py-4 text-white text-lg hover:text-purple-400 transition"
+                        onClick={() => setIsMenuOpen(false)}
                     >
                         Services
                     </a>
                     <a
                         href="#portfolio"
-                        className="block p-4 text-white hover:bg-purple-700 transition"
+                        className="block py-4 text-white text-lg hover:text-purple-400 transition"
+                        onClick={() => setIsMenuOpen(false)}
                     >
                         Portfolio
                     </a>
                     <a
                         href="#contact"
-                        className="block p-4 text-white hover:bg-purple-700 transition"
+                        className="block py-4 text-white text-lg hover:text-purple-400 transition"
+                        onClick={() => setIsMenuOpen(false)}
                     >
                         Contact
                     </a>
-                    <a
-                        href="#contact"
-                        className="block p-4 text-white hover:bg-purple-700 transition"
-                    >
-                        Contact Now
-                    </a>
                 </div>
             )}
+
         </>
     );
 };
