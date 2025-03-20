@@ -1,93 +1,114 @@
 const ContactUs = () => {
     return (
         <>
-            <section id="contact" className="body-font relative bg-primary-100 text-gray-400">
-                <div className="container mx-auto px-5 py-24">
-                    <div className="mb-12 flex w-full flex-col text-center">
-                        <h1 className="title-font mb-4 text-2xl font-medium text-white sm:text-3xl">Contact Us</h1>
-                        <p className="mx-auto text-base leading-relaxed lg:w-2/3">
-                            Feel free to reach out to us! Whether you have a question, feedback, or a collaboration proposal,
-                            we'd love to hear from you.
+            <section className="bg-primary-100 text-white py-20" id="contact">
+                <div className="container mx-auto max-w-7xl px-6 lg:px-16">
+                    {/* Section Title */}
+                    <div className="text-center mb-12">
+                        <p className="text-sm uppercase tracking-wide text-[#4A90E2]">
+                            Contact
+                        </p>
+                        <h2 className="text-4xl sm:text-5xl font-bold">
+                            Get in <span className="text-[#F97316]">Touch</span>
+                        </h2>
+                        <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-400">
+                            Have a project in mind? Let's collaborate and bring your ideas to life.
                         </p>
                     </div>
 
-                    <div className="mx-auto md:w-2/3 lg:w-1/2">
-                        <div className="-m-2 flex flex-wrap">
-                            <div className="w-1/2 p-2">
-                                <div className="relative">
-                                    <input type="text" id="name" name="name"
-                                           className="peer w-full rounded border border-accent-300 bg-accent-100 bg-opacity-40 py-2 px-3 text-base leading-8 text-white placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-primary-500 focus:bg-accent-200 focus:ring-2 focus:ring-primary-500"
-                                           placeholder="Name" />
-                                    <label htmlFor="name"
-                                           className="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-primary-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-primary-100 peer-placeholder-shown:text-base peer-placeholder-shown:text-accent-400 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-primary-500">
-                                        Name
-                                    </label>
-                                </div>
-                            </div>
-                            <div className="w-1/2 p-2">
-                                <div className="relative">
-                                    <input type="email" id="email" name="email"
-                                           className="peer w-full rounded border border-accent-300 bg-accent-100 bg-opacity-40 py-2 px-3 text-base leading-8 text-white placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-primary-500 focus:bg-accent-200 focus:ring-2 focus:ring-primary-500"
-                                           placeholder="Email" />
-                                    <label htmlFor="email"
-                                           className="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-primary-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-primary-100 peer-placeholder-shown:text-base peer-placeholder-shown:text-accent-400 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-primary-500">
-                                        Email
-                                    </label>
-                                </div>
-                            </div>
-                            <div className="mt-4 w-full p-2">
-                                <div className="relative">
-                                    <textarea id="message" name="message"
-                                              className="peer h-32 w-full resize-none rounded border border-accent-300 bg-accent-100 bg-opacity-40 py-2 px-3 text-base leading-6 text-white placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-primary-500 focus:bg-accent-200 focus:ring-2 focus:ring-primary-500"
-                                              placeholder="Message"></textarea>
-                                    <label htmlFor="message"
-                                           className="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-primary-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-primary-100 peer-placeholder-shown:text-base peer-placeholder-shown:text-accent-400 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-primary-500">
-                                        Message
-                                    </label>
-                                </div>
-                            </div>
-                            <div className="w-full p-2">
-                                <button
-                                    className="mx-auto flex rounded-full bg-secondary-400 py-2 px-8 text-lg text-white hover:bg-secondary-500 transition duration-300">
-                                    Send Message
-                                </button>
-                            </div>
+                    {/* Contact Section */}
+                    <div className="grid md:grid-cols-2 gap-12 items-start">
+                        {/* Contact Info */}
+                        <div>
+                            <p className="text-lg text-gray-300">
+                                Feel free to reach out to us for any inquiries, collaborations, or support. We're here to help you succeed!
+                            </p>
 
-                            <div className="mt-8 w-full border-t border-accent-300 p-2 pt-8 text-center">
-                                <a href="mailto:example@email.com" className="text-primary-500 hover:text-secondary-400 transition">
-                                    info@xcorpion.xyz
-                                </a>
-                                <p className="my-5 leading-normal">Mawathagama. <br />Kurunegala, 60060</p>
-                                <span className="inline-flex">
-                                    <a href="#" className="text-accent-400 hover:text-primary-500 transition">
-                                        <svg fill="currentColor" className="h-5 w-5" viewBox="0 0 24 24">
-                                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            <ul className="mt-8 space-y-6">
+                                <li className="flex items-start gap-4">
+                                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#F97316] text-[#0A0F1E]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                             viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                             strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                                             className="h-6 w-6">
+                                            <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                                            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
                                         </svg>
-                                    </a>
-                                    <a href="#" className="ml-4 text-accent-400 hover:text-primary-500 transition">
-                                        <svg fill="currentColor" className="h-5 w-5" viewBox="0 0 24 24">
-                                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                                    </div>
+                                    <div>
+                                        <h3 className="text-lg font-semibold text-white">Our Address</h3>
+                                        <p className="text-gray-400">Mawathagama, Kurunegala. 60060</p>
+                                    </div>
+                                </li>
+
+                                <li className="flex items-start gap-4">
+                                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#F97316] text-[#0A0F1E]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                             viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                             strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                                             className="h-6 w-6">
+                                            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
+                                            <path d="M15 7a2 2 0 0 1 2 2"></path>
+                                            <path d="M15 3a6 6 0 0 1 6 6"></path>
                                         </svg>
-                                    </a>
-                                    <a href="#" className="ml-4 text-accent-400 hover:text-primary-500 transition">
-                                        <svg fill="none" stroke="currentColor" className="h-5 w-5" viewBox="0 0 24 24">
-                                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                                    </div>
+                                    <div>
+                                        <h3 className="text-lg font-semibold text-white">Contact</h3>
+                                        <p className="text-gray-400">Phone: +94 (779) 250-108</p>
+                                        <p className="text-gray-400">Email: info@xcorpion.xyz</p>
+                                    </div>
+                                </li>
+
+                                <li className="flex items-start gap-4">
+                                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#F97316] text-[#0A0F1E]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                             viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                             strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                                             className="h-6 w-6">
+                                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+                                            <path d="M12 7v5l3 3"></path>
                                         </svg>
-                                    </a>
-                                    <a href="#" className="ml-4 text-accent-400 hover:text-primary-500 transition">
-                                        <svg fill="currentColor" className="h-5 w-5" viewBox="0 0 24 24">
-                                            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                                        </svg>
-                                    </a>
-                                </span>
-                            </div>
+                                    </div>
+                                    <div>
+                                        <h3 className="text-lg font-semibold text-white">Working Hours</h3>
+                                        <p className="text-gray-400">Mon - Sun: 00:00 - 11:59</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        {/* Contact Form */}
+                        <div className="bg-[#101626] p-8 rounded-lg shadow-lg">
+                            <h3 className="text-2xl font-bold text-white mb-6">Let's Talk</h3>
+                            <form action="https://fabform.io/f/xxxxx" method="post">
+                                <div className="mb-4">
+                                    <input type="text" id="name" name="name" required
+                                           className="w-full bg-[#172037] border border-[#4A90E2] py-2 px-4 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F97316]"
+                                           placeholder="Your Name"/>
+                                </div>
+                                <div className="mb-4">
+                                    <input type="email" id="email" name="email" required
+                                           className="w-full bg-[#172037] border border-[#4A90E2] py-2 px-4 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F97316]"
+                                           placeholder="Your Email"/>
+                                </div>
+                                <div className="mb-4">
+                                    <textarea id="message" name="message" required
+                                              className="w-full bg-[#172037] border border-[#4A90E2] py-2 px-4 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F97316]"
+                                              placeholder="Your Message"></textarea>
+                                </div>
+                                <div className="text-center">
+                                    <button type="submit"
+                                            className="w-full bg-[#F97316] text-[#0A0F1E] font-semibold py-3 px-6 rounded-full hover:bg-[#FFA94D] transition">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </section>
         </>
-    )
-}
+    );
+};
 
 export default ContactUs;
