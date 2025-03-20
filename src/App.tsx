@@ -1,34 +1,27 @@
 import Footer from "./components/Footer.tsx";
 import Header from "./components/Header.tsx";
-import Hero from "./components/Hero.tsx";
-import AboutUs from "./components/AboutUs.tsx";
-import Services from "./components/Services.tsx";
-import ContactUs from "./components/ContactUs.tsx";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import HomePage from "./Pages/Home.tsx";
 
 function App() {
 
-  return (
-    <>
-        <div>
-            <Header/>
-        </div>
-        <div>
-            <Hero/>
-        </div>
-        <div>
-            <AboutUs/>
-        </div>
-        <div>
-            <Services/>
-        </div>
-        <div>
-            <ContactUs/>
-        </div>
-        <div>
-            <Footer/>
-        </div>
-    </>
-  )
+    return (
+        <>
+            <div>
+                <Header/>
+            </div>
+            <div>
+                <Router>
+                    <Routes>
+                        <Route path="/" element={<HomePage/>}/>
+                    </Routes>
+                </Router>
+            </div>
+            <div>
+                <Footer/>
+            </div>
+        </>
+    )
 }
 
 export default App
