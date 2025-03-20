@@ -1,4 +1,8 @@
+import {useNavigate} from "react-router-dom";
+
 const Pricing = () => {
+    const navigate = useNavigate();
+
     return (
         <>
             <div id="pricing" className=" md:px-20 lg:px-20 bg-primary-100">
@@ -40,10 +44,13 @@ const Pricing = () => {
                                         </li>
                                     ))}
                                 </ul>
-                                <button
-                                    className="w-full py-3 px-6 text-white font-semibold rounded-lg bg-gradient-to-r from-primary-300 to-primary-400 hover:from-primary-400 hover:to-primary-500 transition">
-                                    Choose Plan
-                                </button>
+                                <a href="#contact">
+                                    <button
+                                        className="w-full py-3 px-6 text-white font-semibold rounded-lg bg-gradient-to-r from-primary-300 to-primary-400 hover:from-primary-400 hover:to-primary-500 transition">
+                                        Choose Plan
+
+                                    </button>
+                                </a>
                             </div>
                         </div>
 
@@ -73,10 +80,13 @@ const Pricing = () => {
                                         </li>
                                     ))}
                                 </ul>
-                                <button
-                                    className="w-full py-3 px-6 text-white font-semibold rounded-lg bg-gradient-to-r from-primary-300 to-primary-400 hover:from-primary-400 hover:to-primary-500 transition">
-                                    Choose Plan
-                                </button>
+                                <a href="#contact">
+                                    <button
+                                        className="w-full py-3 px-6 text-white font-semibold rounded-lg bg-gradient-to-r from-primary-300 to-primary-400 hover:from-primary-400 hover:to-primary-500 transition">
+                                        Choose Plan
+
+                                    </button>
+                                </a>
                             </div>
                         </div>
 
@@ -102,10 +112,13 @@ const Pricing = () => {
                                         </li>
                                     ))}
                                 </ul>
-                                <button
-                                    className="w-full py-3 px-6 text-white font-semibold rounded-lg bg-gradient-to-r from-primary-300 to-primary-400 hover:from-primary-400 hover:to-primary-500 transition">
-                                    Choose Plan
-                                </button>
+                                <a href="#contact">
+                                    <button
+                                        className="w-full py-3 px-6 text-white font-semibold rounded-lg bg-gradient-to-r from-primary-300 to-primary-400 hover:from-primary-400 hover:to-primary-500 transition">
+                                        Choose Plan
+
+                                    </button>
+                                </a>
                             </div>
                         </div>
 
