@@ -1,7 +1,5 @@
-import {useNavigate} from "react-router-dom";
 
 const Pricing = () => {
-    const navigate = useNavigate();
 
     return (
         <>
