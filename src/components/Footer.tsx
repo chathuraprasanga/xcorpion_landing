@@ -98,7 +98,7 @@ const Footer = () => {
                                         <h3 className="text-md font-semibold leading-6 text-white">Resources</h3>
                                         <ul role="list" className="mt-6 space-y-4">
                                             <li>
-                                                <a href="/pricing"
+                                                <a href="#pricing"
                                                    className="text-md leading-6 text-gray-300 hover:text-gray-50">Pricing
                                                 </a>
                                             </li>
@@ -131,18 +131,18 @@ const Footer = () => {
                                         <h3 className="text-md font-semibold leading-6 text-white">Company</h3>
                                         <ul role="list" className="mt-6 space-y-4">
                                             <li>
-                                                <a href="/aboutus"
+                                                <a href="#about"
                                                    className="text-md leading-6 text-gray-300 hover:text-gray-50">About
                                                     Us
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/careers"
+                                                <a href="#careers"
                                                    className="text-md leading-6 text-gray-300 hover:text-gray-50">Careers
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/contactus"
+                                                <a href="#contact"
                                                    className="text-md leading-6 text-gray-300 hover:text-gray-50">Contact
                                                     Us
                                                 </a>

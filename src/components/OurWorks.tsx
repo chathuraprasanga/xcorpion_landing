@@ -1,3 +1,6 @@
+import wd from "../assets/project/wd.png"
+import xc from "../assets/logo.png"
+
 const OurWork = () => {
     return (
         <>
@@ -22,7 +25,7 @@ const OurWork = () => {
                                 <div className="relative space-y-8 py-12 p-8">
                                     <img src={project.logo} loading="lazy" width="200" height="200" className="w-12 h-12 rounded-full" alt={project.name} />
                                     <div className="space-y-2">
-                                        <h5 className="text-xl font-semibold text-white transition group-hover:text-[#F97316]">{project.name}</h5>
+                                        <a href={`https:/${project.name}`}><h5 className="text-xl font-semibold text-white transition group-hover:text-[#F97316]">{project.name}</h5></a>
                                         <p className="text-gray-300">{project.description}</p>
                                     </div>
                                 </div>
@@ -37,24 +40,24 @@ const OurWork = () => {
 
 const workProjects = [
     {
-        name: "Xyz.com",
-        logo: "https://www.svgrepo.com/show/164986/logo.svg",
-        description: "Platform to convert Domains into Content websites."
+        name: "wd-app.xcorpion.xyz",
+        logo: wd,
+        description: "Platform to manage day to day business process in Wijekoon Distributors."
     },
     {
-        name: "ABC.com",
-        logo: "https://www.svgrepo.com/show/120853/logo.svg",
-        description: "Platform to create dynamic widgets for websites."
+        name: "xcorpion.xyz",
+        logo: xc,
+        description: "Landing Page for xcorpion tech company."
     },
     {
-        name: "ASD.com",
-        logo: "https://www.svgrepo.com/show/120852/logo.svg",
-        description: "API SaaS Platform that provides an API Suite to help you ship fast."
+        name: "xcorpion.xyz",
+        logo: xc,
+        description: "Landing Page for xcorpion tech company."
     },
     {
-        name: "TMK.co",
-        logo: "https://www.svgrepo.com/show/120850/logo.svg",
-        description: "Chrome Extension that lets you add ChatGPT on any website."
+        name: "xcorpion.xyz",
+        logo: xc,
+        description: "Landing Page for xcorpion tech company."
     }
 ];
 
