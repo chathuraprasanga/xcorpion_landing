@@ -4,9 +4,12 @@ import {
     archiveOutline,
     phonePortraitOutline,
     bagCheckOutline,
-    swapHorizontalOutline
+    swapHorizontalOutline,
+    cubeOutline,
+    fingerPrintOutline,
+    personOutline
 } from "ionicons/icons";
-import { IonIcon } from "@ionic/react";
+import {IonIcon} from "@ionic/react";
 
 const Services = () => {
     return (
@@ -16,7 +19,7 @@ const Services = () => {
                 <div className="w-fit mx-auto text-center">
                     <h2 className="text-2xl md:text-3xl font-bold text-white pb-2">What We Do</h2>
                     <div className="rounded-t-full border-[1px] border-accent-300 overflow-hidden">
-                        <hr className="border-[3px] border-primary-500 w-[50px] mx-auto" />
+                        <hr className="border-[3px] border-primary-500 w-[50px] mx-auto"/>
                     </div>
                 </div>
 
@@ -24,9 +27,10 @@ const Services = () => {
                 <div className="w-full grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-6 mt-10">
                     {/* Service Card */}
                     {servicesData.map((service, index) => (
-                        <div key={index} className="flex items-start gap-4 p-6 bg-accent-100 rounded-lg shadow-lg hover:bg-accent-200 transition">
+                        <div key={index}
+                             className="flex items-start gap-4 p-6 bg-accent-100 rounded-lg shadow-lg hover:bg-accent-200 transition">
                             <span>
-                                <IonIcon className="text-4xl sm:text-5xl text-primary-500" icon={service.icon} />
+                                <IonIcon className="text-4xl sm:text-5xl text-primary-500" icon={service.icon}/>
                             </span>
                             <div className="flex flex-col gap-2">
                                 <h3 className="text-lg sm:text-xl font-semibold text-white">{service.title}</h3>
@@ -72,6 +76,22 @@ const servicesData = [
         icon: swapHorizontalOutline,
         description: "Seamlessly connecting systems to enhance functionality and performance for business automation.",
     },
+    {
+        title: "AI Services",
+        icon: fingerPrintOutline,
+        description: "Integrating AI-driven solutions to automate tasks, improve decision-making, and enhance business efficiency.",
+    },
+    {
+        title: "SaaS Solutions",
+        icon: cubeOutline,
+        description: "Building scalable and efficient cloud-based Software-as-a-Service (SaaS) solutions tailored to businesses.",
+    },
+    {
+        title: "Consulting",
+        icon: personOutline,
+        description: "Providing expert guidance and strategic planning to optimize business processes and drive digital transformation.",
+    },
 ];
+
 
 export default Services;

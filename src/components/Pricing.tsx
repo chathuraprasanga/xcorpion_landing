@@ -24,7 +24,7 @@ const Pricing = () => {
                             <div className="text-center">
                                 <h3 className="text-2xl font-bold text-white">Basic</h3>
                                 <div className="mt-4 text-center">
-                                    <span className="text-4xl text-primary-400 font-bold">&#8377;499</span>
+                                    <span className="text-4xl text-primary-400 font-bold">$ 499</span>
                                     <span className="text-gray-400"> /month</span>
                                 </div>
                             </div>
@@ -57,7 +57,7 @@ const Pricing = () => {
                             <div className="text-center">
                                 <h3 className="text-2xl font-bold text-white">Premium</h3>
                                 <div className="mt-4 text-center">
-                                    <span className="text-4xl text-primary-400 font-bold">&#8377;899</span>
+                                    <span className="text-4xl text-primary-400 font-bold">$ 899</span>
                                     <span className="text-gray-400"> /month</span>
                                 </div>
                             </div>
@@ -86,7 +86,7 @@ const Pricing = () => {
                             <div className="text-center">
                                 <h3 className="text-2xl font-bold text-white">Enterprise</h3>
                                 <div className="mt-4 text-center">
-                                    <span className="text-4xl text-primary-400 font-bold">&#8377;1499</span>
+                                    <span className="text-4xl text-primary-400 font-bold">$ 1499</span>
                                     <span className="text-gray-400"> /month</span>
                                 </div>
                             </div>
