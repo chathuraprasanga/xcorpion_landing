@@ -1,4 +1,41 @@
+import {useState} from "react";
+
 const ContactUs = () => {
+    const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+    const [status, setStatus] = useState("");
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setStatus("Sending...");
+
+        try {
+            const response = await fetch("https://wd-server.xcorpion.xyz/api/v1/public/send-email", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    email: formData.email,
+                    subject: `New message from ${formData.name} in XCORPION Page`,
+                    message: formData.message,
+                }),
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                setStatus("Message sent successfully!");
+                setFormData({ name: "", email: "", message: "" });
+            } else {
+                setStatus(data.error || "Something went wrong.");
+            }
+        } catch (error) {
+            console.error("Error sending email:", error);
+            setStatus("Failed to send message.");
+        }
+    };
     return (
         <>
             <section className="bg-primary-100 text-white py-20" id="contact">
@@ -78,30 +115,51 @@ const ContactUs = () => {
                         </div>
 
                         {/* Contact Form */}
+                        {/* Contact Form */}
                         <div className="bg-[#101626] p-8 rounded-lg shadow-lg">
                             <h3 className="text-2xl font-bold text-white mb-6">Let's Talk</h3>
-                            <form action="https://fabform.io/f/xxxxx" method="post">
+                            <form onSubmit={handleSubmit}>
                                 <div className="mb-4">
-                                    <input type="text" id="name" name="name" required
-                                           className="w-full bg-[#172037] border border-[#4A90E2] py-2 px-4 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F97316]"
-                                           placeholder="Your Name"/>
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        value={formData.name}
+                                        onChange={handleChange}
+                                        required
+                                        className="w-full bg-[#172037] border border-[#4A90E2] py-2 px-4 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F97316]"
+                                        placeholder="Your Name"
+                                    />
                                 </div>
                                 <div className="mb-4">
-                                    <input type="email" id="email" name="email" required
-                                           className="w-full bg-[#172037] border border-[#4A90E2] py-2 px-4 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F97316]"
-                                           placeholder="Your Email"/>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                        required
+                                        className="w-full bg-[#172037] border border-[#4A90E2] py-2 px-4 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F97316]"
+                                        placeholder="Your Email"
+                                    />
                                 </div>
                                 <div className="mb-4">
-                                    <textarea id="message" name="message" required
-                                              className="w-full bg-[#172037] border border-[#4A90E2] py-2 px-4 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F97316]"
-                                              placeholder="Your Message"></textarea>
+                            <textarea
+                                name="message"
+                                value={formData.message}
+                                onChange={handleChange}
+                                required
+                                className="w-full bg-[#172037] border border-[#4A90E2] py-2 px-4 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F97316]"
+                                placeholder="Your Message"
+                            ></textarea>
                                 </div>
                                 <div className="text-center">
-                                    <button type="submit"
-                                            className="w-full bg-[#F97316] text-[#0A0F1E] font-semibold py-3 px-6 rounded-full hover:bg-[#FFA94D] transition">
+                                    <button
+                                        type="submit"
+                                        className="w-full bg-[#F97316] text-[#0A0F1E] font-semibold py-3 px-6 rounded-full hover:bg-[#FFA94D] transition"
+                                    >
                                         Send Message
                                     </button>
                                 </div>
+                                {status && <p className="text-center mt-4 text-gray-300">{status}</p>}
                             </form>
                         </div>
                     </div>

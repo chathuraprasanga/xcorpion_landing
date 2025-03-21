@@ -1,9 +1,7 @@
-
 const Pricing = () => {
-
     return (
         <>
-            <div id="pricing" className=" md:px-20 lg:px-20 bg-primary-100">
+            <div id="pricing" className="md:px-20 lg:px-20 bg-primary-100">
                 <div className="container mx-auto px-4">
                     {/* Section Title */}
                     <div className="mb-12 text-center">
@@ -32,7 +30,13 @@ const Pricing = () => {
                             </div>
                             <div className="mt-6">
                                 <ul className="mb-8 space-y-4">
-                                    {["Cloud Hosting", "Basic Security", "Email Support", "5GB Storage"].map((feature, idx) => (
+                                    {[
+                                        "Web Development (Up to 5 pages)",
+                                        "Basic UI/UX Design",
+                                        "Simple CMS Setup",
+                                        "API Integration (Up to 2 APIs)",
+                                        "Email Support"
+                                    ].map((feature, idx) => (
                                         <li key={idx} className="flex items-center">
                                             <svg className="mr-2 h-5 w-5 text-secondary-400" viewBox="0 0 20 20"
                                                  fill="currentColor">
@@ -46,13 +50,12 @@ const Pricing = () => {
                                     <button
                                         className="w-full py-3 px-6 text-white font-semibold rounded-lg bg-gradient-to-r from-primary-300 to-primary-400 hover:from-primary-400 hover:to-primary-500 transition">
                                         Choose Plan
-
                                     </button>
                                 </a>
                             </div>
                         </div>
 
-                        {/* Premium Plan (Most Popular) */}
+                        {/* Premium Plan */}
                         <div
                             className="relative bg-accent-300 border-2 border-primary-400 rounded-xl p-6 shadow-lg transition hover:scale-105">
                             <div
@@ -68,7 +71,15 @@ const Pricing = () => {
                             </div>
                             <div className="mt-6">
                                 <ul className="mb-8 space-y-4">
-                                    {["Dedicated Hosting", "Advanced Security", "Priority Support", "50GB Storage"].map((feature, idx) => (
+                                    {[
+                                        "Everything in Basic",
+                                        "E-commerce Development",
+                                        "Mobile App Development (Basic)",
+                                        "Advanced API Integrations",
+                                        "Enhanced CMS Functionality",
+                                        "Priority Support",
+                                        "50GB Cloud Storage"
+                                    ].map((feature, idx) => (
                                         <li key={idx} className="flex items-center">
                                             <svg className="mr-2 h-5 w-5 text-secondary-400" viewBox="0 0 20 20"
                                                  fill="currentColor">
@@ -82,7 +93,6 @@ const Pricing = () => {
                                     <button
                                         className="w-full py-3 px-6 text-white font-semibold rounded-lg bg-gradient-to-r from-primary-300 to-primary-400 hover:from-primary-400 hover:to-primary-500 transition">
                                         Choose Plan
-
                                     </button>
                                 </a>
                             </div>
@@ -100,7 +110,15 @@ const Pricing = () => {
                             </div>
                             <div className="mt-6">
                                 <ul className="mb-8 space-y-4">
-                                    {["Unlimited Hosting", "Enterprise Security", "24/7 Dedicated Support", "Unlimited Storage"].map((feature, idx) => (
+                                    {[
+                                        "Everything in Premium",
+                                        "AI-Powered Features",
+                                        "SaaS Platform Development",
+                                        "Business Consulting",
+                                        "Custom DevOps Setup",
+                                        "24/7 Dedicated Support",
+                                        "Unlimited Cloud Storage"
+                                    ].map((feature, idx) => (
                                         <li key={idx} className="flex items-center">
                                             <svg className="mr-2 h-5 w-5 text-secondary-400" viewBox="0 0 20 20"
                                                  fill="currentColor">
@@ -114,7 +132,6 @@ const Pricing = () => {
                                     <button
                                         className="w-full py-3 px-6 text-white font-semibold rounded-lg bg-gradient-to-r from-primary-300 to-primary-400 hover:from-primary-400 hover:to-primary-500 transition">
                                         Choose Plan
-
                                     </button>
                                 </a>
                             </div>
@@ -124,7 +141,7 @@ const Pricing = () => {
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
 
 export default Pricing;
