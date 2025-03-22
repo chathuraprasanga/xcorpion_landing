@@ -47,10 +47,10 @@ const Header = () => {
                             Portfolio
                         </a>
                         <a
-                            href="#contact"
+                            href="#pricing"
                             className="text-sm font-medium hover:text-primary-400 transition"
                         >
-                            Contact
+                            Pricing
                         </a>
                         <a
                             href="#contact"
@@ -126,11 +126,11 @@ const Header = () => {
                         Portfolio
                     </a>
                     <a
-                        href="#contact"
+                        href="#pricing"
                         className="block py-4 text-white text-lg hover:text-primary-400 transition"
                         onClick={() => setIsMenuOpen(false)}
                     >
-                        Contact
+                        Pricing
                     </a>
                 </div>
             )}
